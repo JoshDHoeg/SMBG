@@ -1,3 +1,8 @@
 *{
   font-family: ChampionLight;
 }
+h1{
+  font-family: HighVoltageRough;
+  text-transform: uppercase;
+  color: #152D4E;
+}

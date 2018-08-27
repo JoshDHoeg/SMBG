@@ -23,7 +23,7 @@ get_header(); ?>
   <div class="carousel-inner">
     <div class="item active">
       <div class="item-title">
-        <h1 class="title">Eat Messy. Drink Neat.</h1>
+        <h2 class="title">Eat Messy. Drink Neat.</h2>
         <div class="buttons">
           <a class="btn">Find Us</a>
           <a class="btn">Menu</a>
@@ -70,7 +70,20 @@ get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-
+      <div class="container-fluid" id="ethos">
+        <div class="row">
+          <div class=" col-sm-6">
+            <h1>Ethos of Smiling Moose</h1>
+          </div>
+          <div class="break col-xs-12"></div>
+          <div class=" col-sm-4 col-sm-offset-2">
+            <p>Breif paragraph talking about what makes the Smilng Moose bar and Grill unique and why someone should choose this brand over someone else. This is a pretty ethos focused part of the site. The paragraph should be relativeliy long and leads to a call to action will send people to the locations </p>
+            <div class="buttons">
+              <a class="btn">Menu</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </main><!-- #main -->
   </div><!-- #primary -->

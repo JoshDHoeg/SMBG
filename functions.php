@@ -12,6 +12,7 @@ function awesome_script_enqueue() {
   wp_enqueue_style('default', get_template_directory_uri() . '/css/default.css', array(), '1.0.0', 'all');
   wp_enqueue_style('navbar', get_template_directory_uri() . '/css/navbar.css', array(), '1.0.0', 'all');
   wp_enqueue_style('carousel', get_template_directory_uri() . '/css/carousel.css', array(), '1.0.0', 'all');
+  wp_enqueue_style('ethos', get_template_directory_uri() . '/css/ethos.css', array(), '1.0.0', 'all');
 
   //js
   wp_enqueue_script('jquery');

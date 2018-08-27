@@ -1,0 +1,26 @@
+#ethos .break{
+  height: 12px;
+  background: #152D4E;
+  display: block;
+}
+#ethos{
+  text-align: right;
+  padding: 120px 0;
+}
+#ethos p{
+  padding: 24px 0;
+}
+#ethos h1{
+  margin: 0;
+  padding: 24px 0;
+}
+#ethos .buttons .btn{
+  font-family: HighVoltage;
+  font-size: 18px;
+  letter-spacing: 2px;
+  width: 120px;
+  background: #152D4E;
+  color: #ffffff;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
