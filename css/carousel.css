@@ -1,0 +1,32 @@
+.carousel .item-title{
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding: 200px;
+  z-index: 5;
+}
+.carousel .item .title{
+  color: #ffffff;
+  font-family: HighVoltageRough;
+  text-transform: uppercase;
+  font-size: 72px;
+}
+.carousel .overlay{
+  position: absolute;
+  z-index: 3;
+}
+.carousel .item-title .buttons .btn{
+  font-family: HighVoltage;
+  font-size: 26px;
+  letter-spacing: 2px;
+  padding: 8px 24px;
+  margin: 10px;
+  background: #ffffff;
+  color: #152D4E;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+.carousel .header-img{
+  position: relative;
+  z-index: 1;
+}

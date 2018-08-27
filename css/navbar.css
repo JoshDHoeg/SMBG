@@ -1,0 +1,29 @@
+.navbar{
+  height: 80px;
+  margin: 0;
+  background: transparent;
+  text-align: center;
+  border: none;
+}
+.navbar-toggle{
+  position: fixed;
+  left: 0;
+}
+.navbar-brand{
+  margin-right: 50%;
+}
+.navbar-logo img{
+  width: 60px;
+  margin: 10px;
+}
+.socials{
+  position: fixed;
+  right: 0;
+  top: 0;
+  padding: 14px;
+}
+.socials img{
+  width: 32px;
+  height: 32px;
+  margin: 10px
+}

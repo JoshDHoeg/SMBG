@@ -1,0 +1,29 @@
+@font-face {
+          font-family: HighVoltage;
+          src: url('fonts/highvoltage/highvoltage.ttf') format("ttf")
+                url('fonts/highvoltage/highvoltage.woff') format("woff")
+                url('fonts/highvoltage/highvoltage.woff2') format("woff2");
+          font-weight: normal;
+}
+@font-face {
+          font-family: HighVoltageRough;
+          src: url('fonts/highvoltage/highvoltage_rough.ttf') format("ttf")
+               url('fonts/highvoltage/highvoltage_rough.woff') format("woff")
+               url('fonts/highvoltage/highvoltage_rough.woff2') format("woff2");
+          font-weight: normal;
+}
+@font-face {
+          font-family: ChampionLight;
+          src: url('fonts/champion/champion_lightweight.otf') format("otf");
+          font-weight: normal;
+}
+@font-face {
+          font-family: ChampionMedium;
+          src: url('fonts/champion/champion_welterweight.otf') format("otf");
+          font-weight: normal;
+}
+@font-face {
+          font-family: ChampionHeavy;
+          src: url('fonts/champion/champion_heavyweight.otf') format("otf");
+          font-weight: normal;
+}
