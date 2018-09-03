@@ -1,0 +1,10 @@
+.site-footer{
+  background: #ffffff;
+  padding: 200px 0;
+}
+.site-footer .socials-blue svg{
+  width: 32px;
+  height: 32px;
+  fill: #152D4E;
+  margin: 4px;
+}
