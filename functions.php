@@ -27,6 +27,26 @@ add_action( 'wp_enqueue_scripts', 'awesome_script_enqueue');
 
 /*
 	==========================================
+	 create store post type
+	==========================================
+*/
+
+function create_post_type() {
+  register_post_type( 'smbg_store',
+    array(
+      'labels' => array(
+        'name' => __( 'Store' ),
+        'singular_name' => __( 'Store' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+}
+add_action( 'init', 'create_post_type' );
+
+/*
+	==========================================
 	 Activate menus
 	==========================================
 */
