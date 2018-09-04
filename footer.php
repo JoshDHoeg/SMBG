@@ -86,9 +86,53 @@
 
 
 <?php wp_footer(); ?>
-<script>
+
+
+
+<script type="text/javascript">
+
+
+
+
+		// for ( var i = 0; i < locations.length; i++){
+		// 	console.log("spot");
+		// 	// console.log(locations[i] + " spot ");
+		// }
 
 	function initMap() {
+
+		<?php
+
+				class place {
+					var $lat;
+					var $lng;
+					function set_lat($new_lat) {
+						$this->lat = $new_lat;
+					}
+					function set_lng($new_lng) {
+						$this->lng = $new_lng;
+					}
+				}
+
+				$location = new place;
+				$location->set_lat(39.792860);
+				$location->set_lng(-105.081480);
+
+				$location1 = new place;
+				$location1->set_lat(39.752340);
+				$location1->set_lng(-105.000340);
+
+				error_log( print_r($location, true));
+				$phpArray = array(
+						 1 => $location,
+						 2 => $location1,
+				);
+				error_log( print_r($phpArray, true));
+
+		?>
+
+		var locations = <?php echo json_encode($phpArray); ?>;
+		console.log(locations);
 
 		var map = new google.maps.Map(document.getElementById('map'), {
 			zoom: 4,
@@ -198,18 +242,22 @@
 		// Add a marker clusterer to manage the markers.
 		var markerCluster = new MarkerClusterer(map, markers,
 				{imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
+
+
+
+
+				//
+				// 1 => {lat: 39.792860, lng: -105.081480},
+				// 2 => {lat: 39.752340, lng: -105.000340},
+				// 3 => {lat: 39.678070, lng: -104.940870},
+				// 4 => {lat: 39.702730, lng: -105.329120},
+				// 5 => {lat: 32.014550, lng: -102.157760},
+				// 6 => {lat: 45.677000, lng: -111.186670},
+				// 7 => {lat: 48.167720, lng: -103.620490},
+				// 8 => {lat: 47.790810, lng: -103.283200},
+				// 9 => {lat: 44.270180, lng: -105.492940}
 	}
-	var locations = [
-		{lat: 39.792860, lng: -105.081480},
-	  {lat: 39.752340, lng: -105.000340},
-		{lat: 39.678070, lng: -104.940870},
-		{lat: 39.702730, lng: -105.329120},
-		{lat: 32.014550, lng: -102.157760},
-		{lat: 45.677000, lng: -111.186670},
-		{lat: 48.167720, lng: -103.620490},
-		{lat: 47.790810, lng: -103.283200},
-		{lat: 44.270180, lng: -105.492940},
-	]
 </script>
 		<script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
 	 </script>
