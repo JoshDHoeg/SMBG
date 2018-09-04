@@ -11,6 +11,13 @@
 
 get_header(); ?>
 
+<?php while ( have_posts() ) : the_post(); ?>
+
+
+
+
+
+
 
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
@@ -24,10 +31,19 @@ get_header(); ?>
   <div class="carousel-inner">
     <div class="item active">
       <div class="item-title">
-        <h2 class="title">Eat Messy. Drink Neat.</h2>
+
+        <?php if (get_field('store_header_1')): ?>
+    			<h2 class="title" ><?php the_field('store_header_1'); ?></h2>
+        <?php endif; ?>
+
         <div class="buttons">
-          <a class="btn">Find Us</a>
-          <a class="btn">Menu</a>
+          <?php if (get_field('store_link_1') && get_field('store_link_1_text')): ?>
+            <a href="<?php the_field('store_link_1'); ?>" class="btn"><?php the_field('store_link_1_text'); ?></a>
+          <?php endif; ?>
+
+          <?php if (get_field('store_link_2') && get_field('store_link_2_text')): ?>
+            <a href="<?php the_field('store_link_2'); ?>" class="btn"><?php the_field('store_link_2_text'); ?></a>
+          <?php endif; ?>
         </div>
       </div>
       <img class="overlay" src="<?php echo get_template_directory_uri(); ?>/images/topography.svg" alt="Los Angeles">
@@ -36,10 +52,19 @@ get_header(); ?>
 
     <div class="item">
       <div class="item-title">
-        <h2 class="title">Eat Messy. Drink Neat.</h2>
+
+        <?php if (get_field('store_header_2')): ?>
+          <h2 class="title" ><?php the_field('store_header_2'); ?></h2>
+        <?php endif; ?>
+
         <div class="buttons">
-          <a class="btn">Find Us</a>
-          <a class="btn">Menu</a>
+          <?php if (get_field('store_link_1') && get_field('store_link_1_text')): ?>
+            <a href="<?php the_field('store_link_1'); ?>" class="btn"><?php the_field('store_link_1_text'); ?></a>
+          <?php endif; ?>
+
+          <?php if (get_field('store_link_2') && get_field('store_link_2_text')): ?>
+            <a href="<?php the_field('store_link_2'); ?>" class="btn"><?php the_field('store_link_2_text'); ?></a>
+          <?php endif; ?>
         </div>
       </div>
       <img class="overlay" src="<?php echo get_template_directory_uri(); ?>/images/topography.svg" alt="Los Angeles">
@@ -48,10 +73,19 @@ get_header(); ?>
 
     <div class="item">
       <div class="item-title">
-        <h2 class="title">Store tagline</h2>
+
+        <?php if (get_field('store_header_3')): ?>
+    			<h2 class="title" ><?php the_field('store_header_3'); ?></h2>
+        <?php endif; ?>
+
         <div class="buttons">
-          <a class="btn">Find Us</a>
-          <a class="btn">Menu</a>
+          <?php if (get_field('store_link_1') && get_field('store_link_1_text')): ?>
+            <a href="<?php the_field('store_link_1'); ?>" class="btn"><?php the_field('store_link_1_text'); ?></a>
+          <?php endif; ?>
+
+          <?php if (get_field('store_link_2') && get_field('store_link_2_text')): ?>
+            <a href="<?php the_field('store_link_2'); ?>" class="btn"><?php the_field('store_link_2_text'); ?></a>
+          <?php endif; ?>
         </div>
       </div>
       <img class="overlay" src="<?php echo get_template_directory_uri(); ?>/images/topography.svg" alt="Los Angeles">
@@ -91,7 +125,10 @@ get_header(); ?>
 
       <div class"break lines" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/lines.svg'); height: 10px"></div>
 
+
       </main><!-- .site-main -->
   </div><!-- .content-area -->
+
+<?php endwhile; // end of the loop. ?>
 
 <?php get_footer(); ?>
