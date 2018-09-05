@@ -113,20 +113,21 @@
 						$this->lng = $new_lng;
 					}
 				}
+				$phpArray = array();
+				$args = array( 'post_type' => 'smbg_store' );
+				$loop = new WP_Query( $args );
+				while ( $loop->have_posts() ) : $loop->the_post();
+					$location = new place;
+					if (get_field('store_lat')):
+						$location->set_lat(floatval(get_field('store_lat')));
+					endif;
+					if (get_field('store_lng')):
+						$location->set_lng(floatval(get_field('store_lng')));
+					endif;
+					error_log( print_r($location, true));
+					array_push($phpArray, $location);
+				endwhile;
 
-				$location = new place;
-				$location->set_lat(39.792860);
-				$location->set_lng(-105.081480);
-
-				$location1 = new place;
-				$location1->set_lat(39.752340);
-				$location1->set_lng(-105.000340);
-
-				error_log( print_r($location, true));
-				$phpArray = array(
-						 1 => $location,
-						 2 => $location1,
-				);
 				error_log( print_r($phpArray, true));
 
 		?>
