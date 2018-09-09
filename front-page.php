@@ -35,7 +35,7 @@ get_header(); ?>
 
     <div class="item">
       <div class="item-title">
-        <h2 class="title">Eat Messy. Drink Neat.</h2>
+        <h2 class="title">Front Page</h2>
         <div class="buttons">
           <a class="btn">Find Us</a>
           <a class="btn">Menu</a>
@@ -47,7 +47,7 @@ get_header(); ?>
 
     <div class="item">
       <div class="item-title">
-        <h2 class="title">Eat Messy. Drink Neat.</h2>
+        <h2 class="title">Front Page</h2>
         <div class="buttons">
           <a class="btn">Find Us</a>
           <a class="btn">Menu</a>
@@ -65,27 +65,27 @@ get_header(); ?>
   <a class="right carousel-control" href="#myCarousel" data-slide="next">
     <span class="sr-only">Next</span>
   </a>
+  <div class="bottom-mountains" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/mountains.svg'">
+  </div>
 </div>
 
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
       <div class="container-fluid" id="ethos">
-        <div class="row">
           <div class=" col-sm-6">
             <h1>Ethos of Smiling Moose</h1>
           </div>
           <div class="col-sm-6">
             <img class="stock-food" src="<?php echo get_template_directory_uri(); ?>/images/stock-food.svg" alt="food">
           </div>
-          <div class="break col-xs-12"></div>
+          <div class="break container col-xs-12"></div>
           <div class=" col-sm-4 col-sm-offset-2">
             <p>Breif paragraph talking about what makes the Smilng Moose bar and Grill unique and why someone should choose this brand over someone else. This is a pretty ethos focused part of the site. The paragraph should be relativeliy long and leads to a call to action will send people to the locations </p>
             <div class="buttons">
               <a class="btn">Menu</a>
             </div>
           </div>
-        </div>
       </div>
 
       <div class"break lines" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/lines.svg'); height: 10px"></div>

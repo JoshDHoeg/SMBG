@@ -5,7 +5,8 @@
 }
 #ethos{
   text-align: right;
-  padding: 120px 0;
+  /* padding: 120px 0; */
+  background: #EDEDED;
 }
 #ethos p{
   padding: 24px 0;

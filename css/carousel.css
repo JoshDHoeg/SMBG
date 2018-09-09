@@ -30,3 +30,6 @@
   position: relative;
   z-index: 1;
 }
+.carousel .carousel-indicators{
+  display: none;
+}
