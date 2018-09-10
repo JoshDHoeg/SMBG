@@ -29,7 +29,7 @@ get_header(); ?>
           <a class="btn">Menu</a>
         </div>
       </div>
-      <img class="overlay" src="<?php echo get_template_directory_uri(); ?>/images/topography.svg" alt="Los Angeles">
+      <img class="overlay" src="<?php echo get_template_directory_uri(); ?>/images/icons.svg" alt="Los Angeles">
       <img class="header-img" src="<?php echo get_template_directory_uri(); ?>/images/Mo.png" alt="Los Angeles">
     </div>
 
@@ -41,7 +41,7 @@ get_header(); ?>
           <a class="btn">Menu</a>
         </div>
       </div>
-      <img class="overlay" src="<?php echo get_template_directory_uri(); ?>/images/topography.svg" alt="Los Angeles">
+      <img class="overlay" src="<?php echo get_template_directory_uri(); ?>/images/icons.svg" alt="Los Angeles">
       <img class="header-img" src="<?php echo get_template_directory_uri(); ?>/images/Mo.png" alt="Los Angeles">
     </div>
 
@@ -53,7 +53,7 @@ get_header(); ?>
           <a class="btn">Menu</a>
         </div>
       </div>
-      <img class="overlay" src="<?php echo get_template_directory_uri(); ?>/images/topography.svg" alt="Los Angeles">
+      <img class="overlay" src="<?php echo get_template_directory_uri(); ?>/images/icons.svg" alt="Los Angeles">
       <img class="header-img" src="<?php echo get_template_directory_uri(); ?>/images/Mo.png" alt="Los Angeles">
     </div>
   </div>

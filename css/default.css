@@ -1,10 +1,13 @@
 *{
   font-family: ChampionLight;
+  margin: 0;
 }
 h1{
   font-family: HighVoltageRough;
   text-transform: uppercase;
   color: #152D4E;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 h3{
@@ -16,7 +19,7 @@ h3{
 body {
   overflow-x: hidden;
 }
-main{
+.content-area{
     background: #EDEDED;
 }
 .header-light{

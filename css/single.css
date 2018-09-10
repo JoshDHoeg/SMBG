@@ -1,0 +1,27 @@
+.single-content-area{
+  padding-top: 128px;
+}
+#single-content-text h1{
+  text-align: center;
+  position: relative;
+}
+#single-content-text .line{
+  position: absolute;
+  display: block;
+  height: 6px;
+  margin: 12px 24px;
+  width: 64px;
+  background: #152D4E;
+  top: 24.5px;
+}
+#single-content-text .line-left{
+  left: 0;
+}
+
+#single-content-text .line-right{
+  right: 0;
+}
+#single-content-text .single-title{
+  display: block;
+  margin: auto;
+}
