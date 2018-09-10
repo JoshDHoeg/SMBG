@@ -14,6 +14,7 @@ function awesome_script_enqueue() {
   wp_enqueue_style('footer', get_template_directory_uri() . '/css/footer.css', array(), '1.0.0', 'all');
   wp_enqueue_style('carousel', get_template_directory_uri() . '/css/carousel.css', array(), '1.0.0', 'all');
   wp_enqueue_style('ethos', get_template_directory_uri() . '/css/ethos.css', array(), '1.0.0', 'all');
+  wp_enqueue_style('socials', get_template_directory_uri() . '/css/socials.css', array(), '1.0.0', 'all');
 
   //js
   wp_enqueue_script('jquery');

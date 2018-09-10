@@ -1,11 +1,17 @@
-#ethos .break{
-  height: 12px;
+.break{
   background: #152D4E;
   display: block;
 }
+.break-12{
+  height: 12px;
+}
+.break-6{
+  height: 6px;
+  margin-bottom: 28px;
+}
 #ethos{
   text-align: right;
-  /* padding: 120px 0; */
+  padding: 120px 0;
   background: #EDEDED;
 }
 #ethos p{

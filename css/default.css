@@ -6,6 +6,22 @@ h1{
   text-transform: uppercase;
   color: #152D4E;
 }
+
+h3{
+  font-family: HighVoltageRough;
+  text-transform: uppercase;
+  color: #152D4E;
+  margin: 20px 0;
+}
+body {
+  overflow-x: hidden;
+}
+main{
+    background: #EDEDED;
+}
+.header-light{
+  color: #ffffff;
+}
 .stock-food{
   position: absolute;
   top: 0;
@@ -27,13 +43,23 @@ h1{
   margin-right: -40px;
   z-index: 1;
 }
-.socials {
+
+.socials{
+  height: 66px;
+  padding-top: 15px;
+  text-align: right;
+}
+.socials svg{
+ fill: #152D4E;
+ padding: 4px;
+}
+.socials-header {
   position: fixed;
   right: 0;
   z-index: 2;
   padding: 10px;
 }
-.socials svg{
+.socials-header svg{
   padding: 4px;
   fill: #ffffff;
 }

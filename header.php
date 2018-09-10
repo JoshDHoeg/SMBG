@@ -14,7 +14,7 @@
       <a href="#" class="brand-logo">
         <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="Los Angeles">
       </a>
-    <div class="socials">
+    <div class="socials-header socials">
       <a href="">
         <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
           <rect width="36" height="36" fill="white" fill-opacity="0"/>
@@ -73,6 +73,6 @@
   					</div>
   			</nav>
   		</div>
-  		<div class="cover" onclick="toggleSidenav(0);" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/topography.svg');""></div>
+  		<div class="cover" onclick="toggleSidenav(0);" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/topography.svg');"></div>
 
 <div class="wrap">

@@ -13,24 +13,30 @@
 </div><!-- .wrap -->
 
 		<footer class="site-footer" >
-			<div class="row">
-				<div class="col-md-12">
-					<!-- <iframe
-					  width="450"
-					  height="250"
-					  frameborder="0" style="border:0"
-					  src="https://www.google.com/maps/embed/v1/search?key=AIzaSyDzJJzYGG63xr0YfUHpr2kEQK5k82cE-a8&q=smiling-moose-rocky-mountain-deli" allowfullscreen>
-					</iframe> -->
-					<div id="map" style="height: 300px;"></div>
+			<div class="row" id="map-wrapper">
+				<div class="top-mtn" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/mountains.svg');position:  absolute;z-index:  5;right: 0;left: 0;top: 0;height: 128px;"></div>
+				<div class="btn-mtn" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/mountains.svg');position:  absolute;z-index:  5;right: 0;left: 0;bottom: 0;height: 128px;"></div>
+				<div class="overlay" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/topography.svg')"></div>
+				<div class="col-md-12" >
+					<div class="form-group location-form">
+						<h3 class="header-light">FIND A SMILING MOOSE NEAR YOU</h3>
+				    <input type="text" class="form-control text-input" id="location-form" placeholder="Enter your City, State, or Zipcode">
+						<button type="submit" class="btn btn-primary submit-input">
+							<span class="arrow arrow-1"></span>
+							<span class="arrow arrow-2"></span>
+						</button>
+				  </div>
+					<div id="map" style="height: 650px;"></div>
 				</div>
+
 			</div>
 
-			<div class="row">
+			<div class="row" id="footer-menu">
 	      <div class="col-md-1 col-md-offset-1">
 	        <img src="<?php echo get_template_directory_uri(); ?>/images/logo-blue.svg" width="96px">
 	      </div>
 
-	      <div class="col-md-2">
+	      <div class="col-md-2 blue-side">
 	        <p class="brand-copyright">
 	          © 2018 RightWay Brands, Inc
 	          DBA Smiling Moose Rocky Mountain Deli
@@ -39,7 +45,7 @@
 	          info@smilingmoosedeli.com
 	        </p>
 	      </div>
-	      <div class="col-md-3" id="FooterOne">
+	      <div class="col-md-2 col-md-offset-1 blue-side" id="FooterOne">
 	        <?php
 								wp_nav_menu(array(
 									'theme_location' => 'FooterOne',
@@ -49,7 +55,7 @@
 								);
 							?>
 	      </div>
-	      <div class="col-md-3" id="FooterTwo">
+	      <div class="col-md-2 blue-side" id="FooterTwo">
 	        <?php
 								wp_nav_menu(array(
 									'theme_location' => 'FooterTwo',
@@ -136,7 +142,7 @@
 		console.log(locations);
 
 		var map = new google.maps.Map(document.getElementById('map'), {
-			zoom: 4,
+			zoom: 5,
 			center: {lat: 39.792860, lng: -105.081480},
 			styles: [
             {elementType: 'geometry', stylers: [{color: '#242f3e'}]},

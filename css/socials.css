@@ -1,0 +1,9 @@
+#social-wrapper{
+  padding: 128px 0;
+}
+#social-wrapper #insta-img{
+  height: 64px;
+  width: 64px;
+  padding: 16px;
+  
+}
