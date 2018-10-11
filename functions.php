@@ -37,7 +37,7 @@ function create_post_type() {
   register_post_type( 'smbg_store',
     array(
       'labels' => array(
-        'name' => __( 'Store' ),
+        'name' => __( 'Stores' ),
         'singular_name' => __( 'Store' )
       ),
       'public' => true,
@@ -99,5 +99,21 @@ function theme_prefix_setup() {
 
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
+
+?>
+<?php
+function prefix_send_email_to_admin() {
+    /**
+     * At this point, $_GET/$_POST variable are available
+     *
+     * We can do our normal processing here
+     */
+
+    // Sanitize the POST field
+    // Generate email content
+    // Send to appropriate email
+}
+add_action( 'admin_post_nopriv_contact_form', 'prefix_send_email_to_admi' );
+add_action( 'admin_post_contact_form', 'prefix_send_email_to_admin' );
 
 ?>
