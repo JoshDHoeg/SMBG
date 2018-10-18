@@ -14,8 +14,8 @@
 
 		<footer class="site-footer" >
 			<div class="row" id="map-wrapper">
-				<div class="top-mtn" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/mountains.svg');position:  absolute;z-index:  5;right: 0;left: 0;top: 0;height: 128px;"></div>
-				<div class="btn-mtn" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/mountains.svg');position:  absolute;z-index:  5;right: 0;left: 0;bottom: 0;height: 128px;"></div>
+				<div class="top-mtn" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/mountains-grey.svg');position:  absolute;z-index:  5;right: 0;left: 0;top: 0;height: 128px;"></div>
+				<div class="btn-mtn" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/mountains-white.svg');position:  absolute;z-index:  5;right: 0;left: 0;bottom: 0;height: 128px;"></div>
 				<div class="overlay" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/topography.svg')"></div>
 				<div class="col-md-12" >
 					<div class="form-group location-form">

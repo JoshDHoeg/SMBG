@@ -65,7 +65,7 @@ get_header(); ?>
   <a class="right carousel-control" href="#myCarousel" data-slide="next">
     <span class="sr-only">Next</span>
   </a>
-  <div class="bottom-mountains" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/mountains.svg'">
+  <div class="bottom-mountains" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/mountains-grey.svg'">
   </div>
 </div>
 

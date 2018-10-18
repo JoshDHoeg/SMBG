@@ -96,3 +96,13 @@
 .blue-side{
   border-left: 4px solid #152D4E;
 }
+.site-footer a{
+  text-decoration: none;
+  color: #152D4E;
+}
+.site-footer ul{
+  padding-left: 0;
+}
+.site-footer li{
+  list-style: none;
+}

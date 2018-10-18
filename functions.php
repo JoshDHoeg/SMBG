@@ -40,6 +40,20 @@ function create_post_type() {
         'name' => __( 'Stores' ),
         'singular_name' => __( 'Store' )
       ),
+      'taxonomies' => array('category', 'post_tag'),
+      'supports' => array('title', 'editor', 'thumbnail'),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+  register_post_type( 'smbg_menu_item',
+    array(
+      'labels' => array(
+        'name' => __( 'Menu Items' ),
+        'singular_name' => __( 'Menu Item' )
+      ),
+      'taxonomies' => array('category', 'post_tag'),
+      'supports' => array('title', 'editor', 'thumbnail'),
       'public' => true,
       'has_archive' => true,
     )
@@ -96,6 +110,8 @@ function theme_prefix_setup() {
 		'width'       => 75,
 		'flex-width' => true,
 	) );
+
+  add_theme_support( 'post-thumbnails' );
 
 }
 add_action( 'after_setup_theme', 'theme_prefix_setup' );
