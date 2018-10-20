@@ -16,10 +16,19 @@ get_header(); ?>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
-      <div class="container-fluid" id="menu-detail">
+      <div class="container" id="menu-detail">
         <div class="row">
           <div class="col-sm-12">
+            <?php if ( has_post_thumbnail() ) { ?>
+                <div class="pimage">
+                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
+                </div>
+            <?php } ?>
             <h1><?php the_title(); ?></h1>
+            <p><?php the_content();  ?></p>
+            <?php if (get_field('menu_price')): ?>
+              <p><?php the_field('menu_price'); ?></p>
+            <?php endif; ?>
           </div>
         </div>
       </div>

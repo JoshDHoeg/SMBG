@@ -10,38 +10,62 @@
  * @version 1.0
  */
 
-get_header(); ?>
+get_header();
+
+
+?>
+
+<script>
+function showHint(str) {
+    if (str.length == 0) {
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", "gethint.php?q=" + str, true);
+        xmlhttp.send();
+    }
+}
+</script>
 
 <div class="wrap">
 
-  <?php
-  if ( have_posts() ) : ?>
-		<header class="page-header">
-			<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
-				the_archive_description( '<div class="taxonomy-description">', '</div>' );
-			?>
-		</header><!-- .page-header -->
-	<?php endif; ?>
-
 	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main container" role="main">
 
-		<?php $loop = new WP_Query( array( 'post_type' => 'smbg_menu_item') );
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary" id="menu-drinks" value="drinks" onclick="MenuToggle()">Drinks</button>
+        <button type="button" class="btn btn-secondary" id="menu-mo" value="mo" onclick="MenuToggle()">Mo's</button>
+        <button type="button" class="btn btn-secondary" id="menu-breakfast" value="breakfast" onclick="MenuToggle()">Breakfast</button>
+      </div>
+
+			<p><b>Start typing a name in the input field below:</b></p>
+			<form>
+			First name: <input type="text" onkeyup="showHint(this.value)">
+			</form>
+			<p>Suggestions: <span id="txtHint"></span></p>
+
+		<?php
+
+    if($category){
+      $loop = new WP_Query( array( 'post_type' => 'smbg_menu_item', 'category_name' => $category) );
+    }else{
+      $loop = new WP_Query( array( 'post_type' => 'smbg_menu_item') );
+    }
+
 		if ( $loop->have_posts() ) : ?>
 			<?php
 			/* Start the Loop */
 			while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
       <div class="pindex">
-          <?php if ( has_post_thumbnail() ) { ?>
-              <div class="pimage">
-                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-              </div>
-          <?php } ?>
-          <div class="ptitle">
-              <h2><?php echo get_the_title(); ?></h2>
-          </div>
+
+          <?php get_template_part( 'template-parts/menu_item', 'none' );?>
       </div>
 
 			<?php endwhile;
