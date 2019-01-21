@@ -22,38 +22,38 @@ get_header(); ?>
   <!-- Wrapper for slides -->
   <div class="carousel-inner">
     <div class="item active">
-      <div class="item-title">
+      <div class="item-title" style="background: url(<?php echo get_template_directory_uri(); ?>/images/background.png) rgba(22, 78, 126, 0.75) repeat">
         <h2 class="title">Front Page</h2>
         <div class="buttons">
           <a class="btn">Find Us</a>
           <a class="btn">Menu</a>
         </div>
       </div>
-      <img class="overlay" src="<?php echo get_template_directory_uri(); ?>/images/icons.svg" alt="Los Angeles">
+      <!-- <img class="overlay" src="<?php echo get_template_directory_uri(); ?>/images/background.png" alt="Los Angeles"> -->
       <img class="header-img" src="<?php echo get_template_directory_uri(); ?>/images/Mo.png" alt="Los Angeles">
     </div>
 
     <div class="item">
-      <div class="item-title">
+      <div class="item-title" style="background: url(<?php echo get_template_directory_uri(); ?>/images/background.png) rgba(22, 78, 126, 0.75) repeat">
         <h2 class="title">Eat Messy. Drink Neat.</h2>
         <div class="buttons">
           <a class="btn">Find Us</a>
           <a class="btn">Menu</a>
         </div>
       </div>
-      <img class="overlay" src="<?php echo get_template_directory_uri(); ?>/images/icons.svg" alt="Los Angeles">
+      <!-- <img class="overlay" src="<?php echo get_template_directory_uri(); ?>/images/background.png" alt="Los Angeles"> -->
       <img class="header-img" src="<?php echo get_template_directory_uri(); ?>/images/Mo.png" alt="Los Angeles">
     </div>
 
     <div class="item">
-      <div class="item-title">
+      <div class="item-title" style="background: url(<?php echo get_template_directory_uri(); ?>/images/background.png) rgba(22, 78, 126, 0.75) repeat">
         <h2 class="title">Eat Messy. Drink Neat.</h2>
         <div class="buttons">
           <a class="btn">Find Us</a>
           <a class="btn">Menu</a>
         </div>
       </div>
-      <img class="overlay" src="<?php echo get_template_directory_uri(); ?>/images/icons.svg" alt="Los Angeles">
+      <!-- <img class="overlay" src="<?php echo get_template_directory_uri(); ?>/images/icons.svg" alt="Los Angeles"> -->
       <img class="header-img" src="<?php echo get_template_directory_uri(); ?>/images/Mo.png" alt="Los Angeles">
     </div>
   </div>

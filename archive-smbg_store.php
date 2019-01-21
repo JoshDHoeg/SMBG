@@ -13,6 +13,7 @@
 get_header(); ?>
 
 <div class="wrap">
+				<h1>Find a Location</h1>
 	<?php get_template_part( 'template-parts/location', 'none' );?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
