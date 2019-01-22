@@ -18,6 +18,7 @@ function awesome_script_enqueue() {
   wp_enqueue_style('single', get_template_directory_uri() . '/css/single.css', array(), '1.0.0', 'all');
   wp_enqueue_style('menu', get_template_directory_uri() . '/css/menu.css', array(), '1.0.0', 'all');
   wp_enqueue_style('map', get_template_directory_uri() . '/css/map.css', array(), '1.0.0', 'all');
+  wp_enqueue_style('category', get_template_directory_uri() . '/css/category.css', array(), '1.0.0', 'all');
 
   //js
   wp_enqueue_script('jquery');

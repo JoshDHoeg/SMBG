@@ -1,5 +1,76 @@
-#menu-item{
+.menu-item{
   background: #ffffff;
   margin-top:20px;
   margin-bottom:20px;
+  padding: 16px;
+  border-radius: 1px;
+  border: 4px solid #152D4E;
+}
+
+.menu-item .image img{
+  width: 100px;
+  height: auto;
+}
+
+.menu-item .content h1{
+  margin: 0;
+  font-size: 32px;
+}
+
+.menu-item .content p{
+  font-size: 16px;
+  font-family: ChampionLight;
+}
+
+.menu-item .price p{
+  font-size: 64px;
+  font-weight: bolder;
+  font-family: HighVoltageRough;
+  text-align: right;
+}
+
+.category-header .item-title{
+  position: relative;
+  text-align: center;
+  width: 100%;
+  padding: 36px;
+  height: 320px;
+  z-index: 5;
+}
+.category-header .item .title{
+  color: #ffffff;
+  font-family: HighVoltageRough;
+  text-transform: uppercase;
+  font-size: 72px;
+  height: 100px;
+}
+.category-header .overlay{
+  position: absolute;
+  background-repeat: repeat-x;
+  background-size: cover;
+  z-index: 3;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  /* background: rgba(255,255,255,0.5); */
+}
+.category-header .item-title .buttons .btn{
+  font-family: HighVoltage;
+  font-size: 26px;
+  letter-spacing: 2px;
+  width: 180px;
+  margin: 24px;
+  background: #ffffff;
+  color: #152D4E;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+.category-header .header-img{
+  position: relative;
+  z-index: 1;
+  height: 320px;
+}
+.category-header .carousel-indicators{
+  display: none;
 }

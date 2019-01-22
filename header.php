@@ -11,7 +11,7 @@
 <body <?php body_class(); ?>>
 
   <div class="header">
-      <a href="#" class="brand-logo">
+      <a href="/" class="brand-logo">
         <img class="logo" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" alt="Los Angeles">
       </a>
     <div class="socials-header socials">

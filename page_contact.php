@@ -84,7 +84,7 @@ get_header(); ?>
 
           <div class="entry-content">
             <?php the_content(); ?>
-
+<!--
 	          <style type="text/css">
 	            .error{
 	              padding: 5px 9px;
@@ -115,7 +115,7 @@ get_header(); ?>
 	              <input type="hidden" name="submitted" value="1">
 	              <p><input type="submit"></p>
 	            </form>
-	          </div>
+	          </div> -->
 
           </div><!-- .entry-content -->
 

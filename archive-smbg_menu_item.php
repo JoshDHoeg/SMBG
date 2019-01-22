@@ -40,9 +40,12 @@ get_header();
 		<main id="main" class="site-main container" role="main">
 
       <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="button" class="btn btn-secondary" id="menu-drinks" value="drinks">Drinks</button>
+				<a href="/?cat=3">Drinks</a>
+				<a href="/?cat=4">Mo's</a>
+				<a href="/?cat=5">Breakfast</a>
+        <!-- <button type="button" class="btn btn-secondary" id="menu-drinks" value="drinks">Drinks</button>
         <button type="button" class="btn btn-secondary" id="menu-mo" value="mo" onclick="MenuToggle()">Mo's</button>
-        <button type="button" class="btn btn-secondary" id="menu-breakfast" value="breakfast" onclick="MenuToggle()">Breakfast</button>
+        <button type="button" class="btn btn-secondary" id="menu-breakfast" value="breakfast" onclick="MenuToggle()">Breakfast</button> -->
       </div>
 
 			<!-- <p><b>Start typing a name in the input field below:</b></p>

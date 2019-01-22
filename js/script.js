@@ -6,7 +6,7 @@ jQuery(document).ready(function(){
    console.log("clicked");
    jQuery.ajax({
      type: "POST",
-     url: "./../script.php",
+     url: "bloginfo('wpurl'); ?>/script.php",
      data: { name: "John" }
     }).done(function( msg ) {
      alert( "Data Saved: " + msg );
