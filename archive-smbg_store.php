@@ -12,9 +12,22 @@
 
 get_header(); ?>
 
+<div class="locations-header">
+	<div class="item active">
+		<div class="item-title" style="background: url(<?php echo get_template_directory_uri(); ?>/images/topography.png) rgb(22, 78, 126); background-size: cover;">
+			<h1 class="title">Find a Location</h1>
+		</div>
+	</div>
+</div>
+
+<div class="row locations-map" id="map-wrapper">
+	<div class="col-md-12" >
+		<div id="map" style="height: 550px;"></div>
+	</div>
+
+</div>
+
 <div class="wrap">
-				<h1>Find a Location</h1>
-	<?php get_template_part( 'template-parts/location', 'none' );?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -44,7 +57,6 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
 </div><!-- .wrap -->
 
 <?php get_footer();

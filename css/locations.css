@@ -1,0 +1,44 @@
+.locations-map #map-wrapper{
+  position: relative;
+}
+.locations-map .btm-mtn{
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  right: 0;
+  height: 160px;
+}
+.locations-map .top-mtn{
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  transform: rotateZ(180deg);
+  height: 128px;
+  z-index: 5;
+}
+.locations-map .overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 3;
+}
+.locations-map .location-form{
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  text-align: center;
+  padding: 250px 0;
+}
+.locations-map .text-input{
+  border: solid 3px #FFFFFF;
+  border-radius: 0;
+  background: transparent;
+  color: #ffffff;
+  max-width: 360px;
+  display: inline-block;
+  margin: auto;
+  height: 48px;
+}
